@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wait wait wait 😭</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Arial", sans-serif;
+      background: linear-gradient(135deg, #fff3cd, #ffeeba);
+      text-align: center;
+    }
+
+    .container {
+      background: white;
+      padding: 45px;
+      border-radius: 28px;
+      max-width: 600px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      animation: popIn 0.8s ease;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .dancer {
+      font-size: 70px;
+      animation: dance 0.8s infinite alternate;
+      margin: 20px 0;
+    }
+
+    button {
+      background: #d62828;
+      color: white;
+      border: none;
+      padding: 14px 36px;
+      font-size: 18px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    @keyframes dance {
+      0% { transform: rotate(-10deg) scale(1); }
+      100% { transform: rotate(10deg) scale(1.15); }
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>WAIT 😭</h1>
+
+    <p>
+      I think you misclicked Jessie.
+      Like… spiritually.
+    </p>
+
+    <div class="dancer">💃🕺</div>
+
+    <p>
+      Please go back and press <strong>YES</strong>
+      before this little guy keeps dancing forever.
+    </p>
+
+    <button onclick="location.href='index.html'">Go back ❤️</button>
+  </div>
+
+</body>
+</html>
